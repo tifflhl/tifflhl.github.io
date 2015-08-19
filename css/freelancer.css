@@ -17,18 +17,7 @@ p.small {
     font-size: 16px;
 }
 
-/*a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0;
-    background-image: none;
-    color: #4a4a4a;
-}
-
-
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -101,7 +90,6 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    /*font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 2em;
     font-weight: 700;
 }
@@ -466,5 +454,56 @@ footer .footer-below {
     font-weight: normal;
 }
 
+#email{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 60px;
+    color: #4a4a4a;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
 
+
+#git{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 60px;
+    color: #4a4a4a;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+
+#linkedin{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 60px;
+    color: #4a4a4a;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+#email:hover{
+    color: #ff2060;
+    background: #fff;
+    z-index: 2;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+#git:hover{
+    color: #ff7200;
+    background: #fff;
+    z-index: 2;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+#linkedin:hover{
+    color:#2780e3;
+    background: #fff;
+    z-index: 2;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
 
