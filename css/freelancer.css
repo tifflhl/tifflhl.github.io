@@ -5,6 +5,7 @@
  */
 
 body {
+    position:relative;
     overflow-x: hidden;
 }
 
@@ -16,14 +17,16 @@ p.small {
     font-size: 16px;
 }
 
-a,
+/*a,
 a:hover,
 a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    background-image: none;
+    color: #4a4a4a;
 }
+
 
 h1,
 h2,
@@ -32,9 +35,9 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
-}
+}*/
 
 hr.star-light,
 hr.star-primary {
@@ -63,7 +66,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #4a4a4a;
-    background-color: #fffff9;
+    background-color: #ffffff;
 }
 
 hr.star-primary {
@@ -72,7 +75,7 @@ hr.star-primary {
 
 hr.star-primary:after {
     color: #4a4a4a;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .img-centered {
@@ -81,8 +84,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #c9c9c3;
+    color: #4a4a4a;
+    background: #ffffff;
 }
 
 header .container {
@@ -98,7 +101,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 2em;
     font-weight: 700;
 }
@@ -108,7 +111,7 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     header .container {
         padding-top: 200px;
         padding-bottom: 100px;
@@ -123,51 +126,29 @@ header .intro-text .skills {
     }
 }
 
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+.navbar-inverse .navbar-text {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
 }
 
-.navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    font-size: large;
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: #2780e3;
 
-.navbar a:focus {
-    outline: 0;
 }
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    font-size: large;
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: #2780e3;
 
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
-}
-
-.navbar-default,
-.navbar-inverse {
-    border: 0;
 }
 
 section {
@@ -181,7 +162,7 @@ section h2 {
 
 section.success {
     color: #4a4a4a;
-    background: #fffff9;
+    background: #ffffff;
 }
 
 section.success a,
@@ -193,7 +174,7 @@ section.success a.active {
     color: #2c3e50;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     section {
         padding: 75px 0;
     }
@@ -202,22 +183,23 @@ section.success a.active {
         padding-top: 75px;
     }
 }
-#description{
-    margin-top:30px;
-    margin-bottom:30px;
+
+#description {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-#taken-courses li{
-    list-style:none;
+#taken-courses li {
+    list-style: none;
 }
 
-#portfolio{
-    background-color: #c9c9c3;
+#portfolio {
+    background-color: #ffffff;
 }
 
-.portfolio-item p{
-    margin-left:100px;
-    color: black;
+.portfolio-item p {
+    margin-left: 100px;
+    color: #2780e3;
 }
 
 #portfolio .portfolio-item {
@@ -271,7 +253,7 @@ section.success a.active {
     z-index: 2;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
@@ -291,7 +273,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color:#2780e3;
     background: #fff;
 }
 
@@ -312,7 +294,7 @@ section.success a.active {
     border-radius: 0;
     font-size: 1.5em;
     background: 0 0;
-    box-shadow: none!important;
+    box-shadow: none !important;
     resize: none;
 }
 
@@ -327,10 +309,10 @@ section.success a.active {
     vertical-align: middle;
     vertical-align: baseline;
     opacity: 0;
-    -webkit-transition: top .3s ease,opacity .3s ease;
-    -moz-transition: top .3s ease,opacity .3s ease;
-    -ms-transition: top .3s ease,opacity .3s ease;
-    transition: top .3s ease,opacity .3s ease;
+    -webkit-transition: top .3s ease, opacity .3s ease;
+    -moz-transition: top .3s ease, opacity .3s ease;
+    -ms-transition: top .3s ease, opacity .3s ease;
+    transition: top .3s ease, opacity .3s ease;
 }
 
 .floating-label-form-group::not(:first-child) {
@@ -344,7 +326,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #2780e3;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -370,7 +352,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #2780e3;
 }
 
 .btn-social {
@@ -475,44 +457,14 @@ footer .footer-below {
     opacity: 0;
 }
 
-#about h4, p{
+#about h4, p {
     display: inline;
 }
 
-#about h4{
+#about h4 {
     text-transform: none;
     font-weight: normal;
 }
 
-/*#barchar-one{
 
-}
 
-#barchart{
-    margin-top: 10px;
-    padding-left:0px;
-}
-
-#barchart-one .chart div{
-    float:right;
-    display:block;
-    font: 10px sans-serif;
-    background-color: steelblue;
-    padding: 3px;
-    margin: 1px;
-    color: white;
-}
-
-#barchart .chart div {
-    float:left;
-    font: 10px sans-serif;
-    background-color: steelblue;
-    text-align: right;
-    padding: 3px;
-    margin: 1px;
-    color: white;
-}
-
-#barchart-one, #barchart{
-    display:inline;
-}*/
