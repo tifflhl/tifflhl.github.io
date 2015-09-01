@@ -17,16 +17,6 @@ p.small {
     font-size: 16px;
 }
 
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}*/
 
 hr.star-light,
 hr.star-primary {
@@ -40,7 +30,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f013";
+    /*content: "\f013";*/
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -50,20 +40,21 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #4a4a4a;
+    width:100px;
+    border-color: #ffffff;
 }
 
 hr.star-light:after {
-    color: #4a4a4a;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
 }
 
 hr.star-primary {
-    border-color: #4a4a4a;
+    border-color: #ffffff;
 }
 
 hr.star-primary:after {
-    color: #4a4a4a;
+    color: #ffffff;
     background-color: #ffffff;
 }
 
@@ -71,10 +62,21 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+#header-container{
+    padding-top:100px;
+    padding-bottom:50px;
+}
+
 header {
     text-align: center;
-    color: #4a4a4a;
+    color: #ffffff;
     background: #ffffff;
+    heigh:1000px;
+    background: url(../img/joffre-lakes.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header .container {
@@ -139,6 +141,7 @@ header .intro-text .skills {
 
 }
 
+
 section {
     padding: 100px 0;
 }
@@ -151,6 +154,7 @@ section h2 {
 section.success {
     color: #4a4a4a;
     background: #ffffff;
+    padding-bottom: 50px;
 }
 
 section.success a,
@@ -177,12 +181,24 @@ section.success a.active {
     margin-bottom: 30px;
 }
 
+#description .col-md-4{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
 #taken-courses li {
     list-style: none;
 }
 
 #portfolio {
     background-color: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.portfolio-item {
+    /*border:solid;
+    border-color: #4a4a4a;*/
 }
 
 .portfolio-item p {
@@ -330,7 +346,7 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
+    padding-top: 0px;
     background-color: #4a4a4a;
 }
 
@@ -341,6 +357,11 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #2780e3;
+}
+
+#contact{
+    padding-bottom:50px;
+    padding-top:50px;
 }
 
 .btn-social {
@@ -445,6 +466,7 @@ footer .footer-below {
     opacity: 0;
 }
 
+
 #about h4, p {
     display: inline;
 }
@@ -485,7 +507,7 @@ footer .footer-below {
 
 #email:hover{
     color: #ff2060;
-    background: #fff;
+    background: #ffffff;
     z-index: 2;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -493,7 +515,7 @@ footer .footer-below {
 
 #git:hover{
     color: #ff7200;
-    background: #fff;
+    background: #ffffff;
     z-index: 2;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -501,7 +523,7 @@ footer .footer-below {
 
 #linkedin:hover{
     color:#2780e3;
-    background: #fff;
+    background: #ffffff;
     z-index: 2;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
