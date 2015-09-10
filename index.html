@@ -21,7 +21,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
           rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 
     <!-- Custom Icons -->
     <link rel="stylesheet"
@@ -60,7 +61,7 @@
             <a href="#portfolio" onclick=$("#menu-close").click();>My Work</a>
         </li>
         <li>
-            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
         </li>
     </ul>
 </nav>
@@ -68,7 +69,7 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <h1>Tiffany Lam</h1>
+        <h1 class="highlight">Tiffany Lam</h1>
 
         <h3>UBC Coop - Software Engineer - Web Developer</h3>
         <br>
@@ -82,9 +83,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="quote">"Ich bin ein nerd!"</h2>
-
-                <p class="lead quote"> - Jen, The IT Crowd .</p>
+                <h1 class="quote highlight">"Ich bin ein nerd!"</h1>
             </div>
         </div>
         <!-- /.row -->
@@ -98,7 +97,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 col-lg-offset-1">
-                <h2>About Me</h2>
+                <h2 class="highlight">About Me</h2>
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
@@ -107,17 +106,17 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
                             </span>
-                            <h4>
+                            <h4 class="highlight">
                                 <strong>Education</strong>
                             </h4>
-                            <button class="btn btn-light" role="button" data-toggle="collapse"
+                            <button class="btn btn-dark rotate" role="button" data-toggle="collapse"
                                     aria-expanded="false" aria-controls="educationCollapsable"
                                     data-target="#educationCollapsable"><i class="fa fa-chevron-down"></i></button>
                         </div>
                         <div class="collapse" id="educationCollapsable">
-                            <h3 class="text-left">University of British Columbia</h3>
+                            <h3 class="text-left"><strong>University of British Columbia</strong></h3>
 
-                            <h3 class="text-left">BA Computer Science</h3>
+                            <h3 class="text-left"><strong>BA Computer Science</strong></h3>
 
                             <div class="text-left">
                                 <p>I began my study in CS in 2014, following are CS courses I will be completing by the
@@ -161,16 +160,16 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-code fa-stack-1x text-primary"></i>
                             </span>
-                            <h4>
+                            <h4 class="highlight">
                                 <strong>Technical Skills</strong>
                             </h4>
-                            <button class="btn btn-light" role="button" data-toggle="collapse"
+                            <button class="btn btn-dark rotate" role="button" data-toggle="collapse"
                                     aria-expanded="false" aria-controls="technicalCollapsable"
                                     data-target="#technicalCollapsable"><i class="fa fa-chevron-down"></i></button>
                         </div>
                         <div class="collapse" id="technicalCollapsable">
-                            <h3>Languages: </h3>
-                            <ul class="text-left">
+                            <h4 class="text-center"><strong>Languages</strong></h4>
+                            <ul class="text-center">
                                 <li><i class="devicon-html5-plain colored"></i>HTML5</li>
                                 <li><i class="devicon-css3-plain colored"></i>CSS3</li>
                                 <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
@@ -183,8 +182,8 @@
                                 <li><i class="devicon-apple-original colored"></i> Swift</li>
                             </ul>
 
-                            <h3>Tools:</h3>
-                            <ul class="text-left">
+                            <h4 class="text-center"><strong>Tools</strong></h4>
+                            <ul class="text-center">
                                 <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
                                 <li><i class="devicon-docker-plain colored"></i> Docker</li>
                                 <li><i class="devicon-git-plain colored"></i> Git</li>
@@ -200,26 +199,27 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-comment fa-stack-1x text-primary"></i>
                             </span>
-                            <h4>
-                                <strong>Soft Skills</strong>
+                            <h4 class="highlight">
+                                <strong >Soft Skills</strong>
                             </h4>
-                            <button class="btn btn-light" role="button" data-toggle="collapse"
+                            <button class="btn btn-dark rotate" role="button" data-toggle="collapse"
                                     aria-expanded="false" aria-controls="softCollapsable"
                                     data-target="#softCollapsable"><i class="fa fa-chevron-down"></i></button>
                         </div>
                         <div class="collapse" id="softCollapsable">
 
                             <div class="text-left">
-                                <h3>Teaching Assistant (Models of Computation) </h3>
-                                <h4>May - June 2015</h4>
-
+                                <h3><strong>Teaching Assistant (Models of Computation)</strong> </h3>
+                                <!--h3><strong>(Models of Computation)</strong></h3-->
+                                <h4><strong>May - June 2015</strong></h4>
+                            </div>
+                            <div class="text-left">
                                 <p> As part of the assignment team, I graded assignments and gave feedback to my
                                     team leader as a way of improving students'
                                     learning. I was also the lecture material lead, responsibilities included
                                     preparing lecture problems
                                     solutions and students' in-class activity participation statistics. </p>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -228,16 +228,21 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
                             </span>
-                            <h4>
+                            <h4 class="highlight">
                                 <strong>Interests</strong>
                             </h4>
-                            <button class="btn btn-light" role="button" data-toggle="collapse"
+                            <button class="btn btn-dark rotate" role="button" data-toggle="collapse"
                                     aria-expanded="false" aria-controls="interestsCollapsable"
                                     data-target="#interestsCollapsable"><i class="fa fa-chevron-down"></i></button>
                         </div>
                         <div class="collapse" id="interestsCollapsable">
-                            <p> When the sun does shine in Vancouver, I love to hike and bike around beautiful BC.<br>
-                            When the rain attacks, I love to stay warm and cozy with some people building on Sims, firing up in GTAV on the console or playing stealth in the AC series </p>
+                            <h3><strong>Hike</strong></h3>
+                            <h3><strong>Bike</strong></h3>
+                            <h3><strong>Game</strong></h3>
+                            <div class="text-left">
+                                <p> When the sun does shine in Vancouver, I love to hike and bike around beautiful BC.<br>
+                                    When the rain attacks, I love to stay warm and cozy with some people building on Sims, firing up in GTAV on the console or playing stealth in the AC series </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -253,11 +258,11 @@
 <!-- Callout -->
 <aside class="callout">
     <div class="text-vertical-center">
-        <h3 class="quote ">"No talking about memory or RAM. "</h3>
-        <p class="lead quote "> - Jen</p>
-
-        <h3 class="quote">"Memory is RAM!"</h3>
-        <p class="lead quote"> - Moss, The IT Crowd .</p>
+        <h3 class="quote highlight">"No talking about memory or RAM. "</h3>
+        <p class="lead quote highlight"> - Jen</p>
+        <br>
+        <h3 class="quote highlight">"Memory is RAM!"</h3>
+        <p class="lead quote highlight"> - Moss</p>
     </div>
 </aside>
 
@@ -266,64 +271,56 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>My Work</h2>
+                <h2 class="highlight">My Work</h2>
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="portfolio-item">
                             <img class="img-portfolio img-responsive" src="img/main-page.png">
-                            <button class="btn btn-light" role="button" data-toggle="collapse"
+                            <div class="collapse" id="p1Collapsable">
+                                <h2>UBC Course Scheduler</h2>
+                                <hr class="star-primary">
+                                <img src="img/diy-scheduler1.png"
+                                     class="img-responsive img-centered" alt="">
+                                <img src="img/diy-scheduler2.png"
+                                     class="img-responsive img-centered" alt="">
+
+
+                                <p>Course scheduler web application designed for UBC students. The website is intend to be
+                                    an
+                                    opensource alternative for students to put their class schedule together. It also
+                                    provides
+                                    an auto scheduling
+                                    option that helps students save time on putting the schedule together by
+                                    themselves. </p>
+                                <h4>Role: Frontend Developer</h4>
+                                <h4>Responsibilities: Designed website layout with HTML5 and CSSS3. Also coded diy scheduler
+                                    with
+                                    <a href="http://fullcalendar.io">Fullcalendar</a>. Enriched the website with interactive
+                                    features like adding and deleting classes tags and dropdown menus according to the
+                                    course code entered
+                                    by the user, with jQuery and
+                                    javascript.</h4>
+                                <h4>Programming Languages: Javascript, jQuery, HTML5, CSS3</h4>
+                                <ul class="list-inline item-details">
+                                    <li>Project Details:
+                                        <strong><a href="https://github.com/koalasw/UBCCourseScheduler">UBC Course Scheduler
+                                            on
+                                            Github</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>July 2015 - Ongoing</strong>
+                                    </li>
+                                    <li>Organisation:
+                                        <strong><a href="https://github.com/koalasw">As a member of koalasw</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-light rotate" role="button" data-toggle="collapse"
                                     aria-expanded="false" aria-controls="p1Collapsable"
                                     data-target="#p1Collapsable"><i class="fa fa-chevron-down fa-2x"></i></button>
-                        </div>
-                        <div class="collapse" id="p1Collapsable">
-                            <h2>UBC Course Scheduler</h2>
-                            <hr class="star-primary">
-                            <img src="img/diy-checks1.png"
-                                 class="img-responsive img-centered" alt="">
-                            <img src="img/diy-checks2.png"
-                                 class="img-responsive img-centered" alt="">
-                            <img src="img/diy-tags.png"
-                                 class="img-responsive img-centered" alt="">
-                            <img src="img/diy-add-courses.png"
-                                 class="img-responsive img-centered" alt="">
-
-
-                            <p>Course scheduler web application designed for UBC students. The website is intend to be
-                                an
-                                opensource alternative for students to put their class schedule together. It also
-                                provides
-                                an auto scheduling
-                                option that helps students save time on putting the schedule together by
-                                themselves. </p>
-                            <h4>Role: Frontend Developer</h4>
-                            <h4>Responsibilities: Designed website layout with HTML5 and CSSS3. Also coded diy scheduler
-                                with
-                                <a href="http://fullcalendar.io">Fullcalendar</a>. Enriched the website with interactive
-                                features like adding and deleting classes tags and dropdown menus according to the
-                                course code entered
-                                by the user, with jQuery and
-                                javascript.</h4>
-                            <h4>Programming Languages: Javascript, jQuery, HTML5, CSS3</h4>
-                            <ul class="list-inline item-details">
-                                <li>Project Details:
-                                    <strong><a href="https://github.com/koalasw/UBCCourseScheduler">UBC Course Scheduler
-                                        on
-                                        Github</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>July 2015 - Ongoing</strong>
-                                </li>
-                                <li>Organisation:
-                                    <strong><a href="https://github.com/koalasw">As a member of koalasw</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>
-                                Close
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -331,34 +328,31 @@
                     <div class="col-md-12">
                         <div class="portfolio-item">
                             <img class="img-portfolio img-responsive" src="img/personal-website.png">
-                            <button class="btn btn-light" role="button" data-toggle="collapse"
+                            <div class="collapse" id="p2Collapsable">
+                                <h2>Personal Website on Github Pages</h2>
+                                <hr class="star-primary">
+                                <p>As a resourceful web developer, this simple one-page personal website based on
+                                    <a href="http://startbootstrap.com">Start Bootstrap</a> Stylish Portfolio theme.
+                                    Customizations were made to about section collapsable, portfolio collapsables,
+                                    bootstrap buttons and the page layout design. This website also utilized the elegant
+                                    <a href="http://bootswatch.com">Bootswatch</a> Cosmo theme.</p>
+                                <h4>Role: Froneend Developer</h4>
+                                <h4>Programming Languages: HTML5, CSS3</h4>
+                                <ul class="list-inline item-details">
+                                    <li>Project Details:
+                                        <strong><a href="https://github.com/tifflhl/tifflhl.github.io">Personal Website
+                                            Repository on
+                                            Github</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>August 2015</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-light rotate" role="button" data-toggle="collapse"
                                     aria-expanded="false" aria-controls="p2Collapsable"
                                     data-target="#p2Collapsable"><i class="fa fa-chevron-down fa-2x"></i></button>
-                        </div>
-                        <div class="collapse" id="p2Collapsable">
-                            <h2>Personal Website on Github Pages</h2>
-                            <hr class="star-primary">
-                            <p>As a resourceful web developer, this simple one-page personal website based on
-                                <a href="http://startbootstrap.com">Start Bootstrap</a> Stylish Portfolio theme.
-                                Customizations were made to about section collapsable, portfolio collapsables,
-                                bootstrap buttons and the page layout design. This website also utilized the elegant
-                                <a href="http://bootswatch.com">Bootswatch</a> Cosmo theme.</p>
-                            <h4>Role: Froneend Developer</h4>
-                            <h4>Programming Languages: HTML5, CSS3</h4>
-                            <ul class="list-inline item-details">
-                                <li>Project Details:
-                                    <strong><a href="https://github.com/tifflhl/tifflhl.github.io">Personal Website
-                                        Repository on
-                                        Github</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>August 2015</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -370,29 +364,16 @@
     </div>
 </section>
 
-<!-- Call to Action -->
-<!--aside class="call-to-action bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h3>The buttons below are impossible to resist.</h3>
-                <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-            </div>
-        </div>
-    </div>
-</aside-->
-
 <!-- Footer -->
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h4><strong>Tiffany Lam</strong>
+                <h4 class="highlight"><strong>Tiffany Lam</strong>
                 </h4>
 
-                <p>Vancouver BC, Canada</p>
-                <ul class="list-unstyled">
+                <p class="highlight">Vancouver BC, Canada</p>
+                <ul class="list-unstyled highlight">
                     <li><i class="fa fa-phone fa-fw"></i> (778) 317-2335</li>
                     <li><i class="fa fa-envelope-o fa-fw"></i>
                         <a href="mailto:tiffanylamhl@gmail.com">tiffanylamhl@gmail.com</a>
@@ -401,7 +382,7 @@
                 <br>
                 <ul class="list-inline">
                     <li>
-                        <a href="https://github.com/tifflhl"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        <a href="https://github.com/tifflhl"><i class="fa fa-github-alt fa-fw fa-3x"></i></a>
                     </li>
                     <li>
                         <a href="https://ca.linkedin.com/pub/tiffany-hoi-ling-lam/57/140/302"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
@@ -411,7 +392,7 @@
                     </li>
                 </ul>
                 <hr class="small">
-                <p class="text-muted">Copyright &copy; Tiffany Lam 2015</p>
+                <p class="text-muted highlight">Copyright &copy; Tiffany Lam 2015</p>
             </div>
         </div>
     </div>
@@ -437,6 +418,10 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
+
+    $(".rotate").click(function(){
+        $(this).toggleClass("down")  ;
+    })
 
     // Scrolls to the selected menu item on the page
     $(function () {

@@ -16,6 +16,11 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.highlight {
+    font-family: 'Audiowide', cursive;
+}
+
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -23,7 +28,6 @@ body {
 }
 
 .text-vertical-center h1 {
-    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
     font-size: 4.5em;
@@ -42,7 +46,7 @@ body {
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: #fff;
+    color: #333;
     background-color: transparent;
 }
 
@@ -68,8 +72,8 @@ body {
 }
 
 #resume:hover{
-    color: rgba(0,0,0,0.4);
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #333;
 }
 
 
@@ -108,6 +112,7 @@ hr.small {
 }
 
 .sidebar-nav li {
+    font-family: 'Audiowide', cursive;
     text-indent: 20px;
     line-height: 40px;
 }
@@ -144,6 +149,11 @@ hr.small {
     background: none;
 }
 
+#menu-close{
+    color: #ffffff;
+    background-color: #222;
+}
+
 #menu-toggle {
     z-index: 1;
     position: fixed;
@@ -172,7 +182,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/retina_wood.png) repeat;
+    background: url(../img/gplaypattern.png) repeat;
 
     /* For one image background */
     /* background: url(...) no-repeat center center scroll;*/
@@ -189,7 +199,6 @@ hr.small {
 }
 
 .quote{
-    font-family: 'Press Start 2P', cursive ;
     color: #323232;
 }
 
@@ -209,23 +218,49 @@ hr.small {
 }
 
 .service-item .fa-graduation-cap, .fa-code,.fa-comment ,.fa-gamepad{
-    color: #3189e5;
-}
-
-.service-item .fa-graduation-cap:hover, .fa-code:hover,.fa-comment:hover ,.fa-gamepad:hover{
     color: #4a4a4a;
 }
 
+.service-item .fa-graduation-cap:hover:before{
+    color: #ff0d2f;
+    content:  "\f1d0"
+}
+
+.service-item .fa-code:hover:before{
+      color: #744b40;
+      content:  "\f0f4"
+}
+
+.service-item .fa-comment:hover:before {
+    color: #2780e3;
+    content: "\f118"
+}
+
+.service-item .fa-gamepad:hover:before{
+     color: #323232;
+     content:  "\f206"
+ }
+
+#educationCollapsable, #technicalCollapsable, #softCollapsable, #interestsCollapsable{
+    padding-bottom:10px;
+}
+
 #educationCollapsable li a,p{
+    color: #333;
+    font-family: 'Ubuntu Condensed', sans-serif;
     display:inline;
 }
 
 #educationCollapsable li a{
-    color: #ffffff;
+    text-decoration: underline;
+}
+
+#educationCollapsable li a:hover{
+    color: #3189e5;
 }
 
 #educationCollapsable ul li{
-    padding-left:0px;
+    padding-left:0;
 }
 
 #taken-courses{
@@ -233,9 +268,19 @@ hr.small {
     list-style:none;
 }
 
-#technicalCollapsable li{
-    list-style:none;
+#technicalCollapsable ul{
+    -webkit-padding-start: 0px;
+    display:inline-block;
 }
+
+#technicalCollapsable li{
+    color:#333;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    list-style:none;
+    padding-left:0;
+}
+
+
 
 /* Callout */
 
@@ -244,8 +289,8 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    /*background: url(../img/callout.jpg) no-repeat center center scroll;*/
-    background: url(../img/retina_wood.png) repeat;
+    /*background: url(../img/gplaypattern.png) no-repeat center center scroll;*/
+    background: url(../img/gplaypattern.png) repeat;
     /*-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -256,6 +301,10 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+}
+
+#portfolio h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .portfolio-item {
@@ -295,6 +344,28 @@ footer {
     padding: 60px 0;
 }
 
+.list-unstyled li a, .list-inline li a{
+    color: #4a4a4a;
+}
+
+.fa-github-alt:hover, .fa-linkedin:hover, .fa-file-code-o:hover{
+    z-index: 2;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
 .bg-primary{
-    background-color: #4a4a4a;
+    background-color: #b2b2b2;
+}
+
+.rotate{
+    -moz-transition: all 0.05s linear;
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+}
+
+.rotate.down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
 }
